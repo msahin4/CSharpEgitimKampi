@@ -37,7 +37,7 @@ namespace _09_DatabaseProject
             SqlCommand command = new SqlCommand("Select * From Bolgeler", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dataTable = new DataTable();
-
+            
             adapter.Fill(dataTable);
 
             foreach (DataRow row in dataTable.Rows)
